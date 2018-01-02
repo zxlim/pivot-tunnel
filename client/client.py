@@ -20,23 +20,23 @@ DEBUG = False
 SOCK_MTU = 1500
 
 
-def print_status(self, buf, debug_msg=False):
+def print_status(buf, debug_msg=False):
     if (debug_msg and DEBUG) or not debug_msg:
         print("[*] {0}".format(buf))
 
-def print_good(self, buf, debug_msg=False):
+def print_good(buf, debug_msg=False):
     if (debug_msg and DEBUG) or not debug_msg:
         print("[+] {0}".format(buf))
 
-def print_bad(self, buf, debug_msg=False):
+def print_bad(buf, debug_msg=False):
     if (debug_msg and DEBUG) or not debug_msg:
         print("[-] {0}".format(buf))
 
-def print_error(self, buf, debug_msg=False):
+def print_error(buf, debug_msg=False):
     if (debug_msg and DEBUG) or not debug_msg:
         print("[!] {0}".format(buf))
 
-def print_debug(self, buf):
+def print_debug(buf):
     if DEBUG:
         print("[DEBUG] {0}".format(buf))
 
